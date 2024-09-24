@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DesafiioTargetSp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+367e73c73611bce91c8042f1468cb8304debd6b2")]
 [assembly: System.Reflection.AssemblyProductAttribute("DesafiioTargetSp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DesafiioTargetSp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
