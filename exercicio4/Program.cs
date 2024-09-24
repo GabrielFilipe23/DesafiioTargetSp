@@ -1,51 +1,31 @@
 ﻿using System;
-using System.IO;
+using System.Collections.Generic;
 using System.Linq;
-using Newtonsoft.Json;
 
 class Program
 {
-    public class Faturamento
-    {
-        public double[] faturamento_diario { get; set; } = Array.Empty<double>();
-    }
-
     static void Main()
     {
-        string json;
-        try
+        var faturamentoPorEstado = new Dictionary<string, double>
         {
-            json = File.ReadAllText("faturamento.json");
-        }
-        catch (FileNotFoundException)
+            { "SP", 67836.43 },
+            { "RJ", 36678.66 },
+            { "MG", 29229.88 },
+            { "ES", 27165.48 },
+            { "Outros", 19849.53 }
+        };
+
+        double totalFaturamento = faturamentoPorEstado.Values.Sum();
+        var estados = faturamentoPorEstado.Keys.ToArray();
+        var valores = faturamentoPorEstado.Values.ToArray();
+
+        Console.WriteLine("Faturamento total: R$ {0:F2}", totalFaturamento);
+        Console.WriteLine("Porcentagem do faturamento de cada estado:");
+
+        for (int i = 0; i < estados.Length; i++)
         {
-            Console.WriteLine("Erro: O arquivo 'faturamento.json' não foi encontrado.");
-            return;
+            double porcentagem = (valores[i] / totalFaturamento) * 100;
+            Console.WriteLine("{0}: {1:F2}%", estados[i], porcentagem);
         }
-
-        Faturamento? dados = JsonConvert.DeserializeObject<Faturamento>(json);
-        
-        if (dados?.faturamento_diario == null || !dados.faturamento_diario.Any())
-        {
-            Console.WriteLine("Erro: Não há dados de faturamento disponíveis.");
-            return;
-        }
-
-        double[] faturamentoValido = dados.faturamento_diario.Where(valor => valor > 0).ToArray();
-
-        if (!faturamentoValido.Any())
-        {
-            Console.WriteLine("Erro: Não há faturamento válido para processar.");
-            return;
-        }
-
-        double menorFaturamento = faturamentoValido.Min();
-        double maiorFaturamento = faturamentoValido.Max();
-        double mediaMensal = faturamentoValido.Average();
-        int diasSuperiorMedia = faturamentoValido.Count(valor => valor > mediaMensal);
-
-        Console.WriteLine("Menor faturamento: R$ {0:F2}", menorFaturamento);
-        Console.WriteLine("Maior faturamento: R$ {0:F2}", maiorFaturamento);
-        Console.WriteLine("Número de dias com faturamento superior à média: {0}", diasSuperiorMedia);
     }
 }
