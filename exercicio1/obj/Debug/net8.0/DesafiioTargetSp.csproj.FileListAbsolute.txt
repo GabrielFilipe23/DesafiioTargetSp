@@ -1,0 +1,14 @@
+E:\DesafioEstagio\DesafioTargetSystem\DesafiioTargetSp\exercicio1\bin\Debug\net8.0\DesafiioTargetSp.exe
+E:\DesafioEstagio\DesafioTargetSystem\DesafiioTargetSp\exercicio1\bin\Debug\net8.0\DesafiioTargetSp.deps.json
+E:\DesafioEstagio\DesafioTargetSystem\DesafiioTargetSp\exercicio1\bin\Debug\net8.0\DesafiioTargetSp.runtimeconfig.json
+E:\DesafioEstagio\DesafioTargetSystem\DesafiioTargetSp\exercicio1\bin\Debug\net8.0\DesafiioTargetSp.dll
+E:\DesafioEstagio\DesafioTargetSystem\DesafiioTargetSp\exercicio1\bin\Debug\net8.0\DesafiioTargetSp.pdb
+E:\DesafioEstagio\DesafioTargetSystem\DesafiioTargetSp\exercicio1\obj\Debug\net8.0\DesafiioTargetSp.GeneratedMSBuildEditorConfig.editorconfig
+E:\DesafioEstagio\DesafioTargetSystem\DesafiioTargetSp\exercicio1\obj\Debug\net8.0\DesafiioTargetSp.AssemblyInfoInputs.cache
+E:\DesafioEstagio\DesafioTargetSystem\DesafiioTargetSp\exercicio1\obj\Debug\net8.0\DesafiioTargetSp.AssemblyInfo.cs
+E:\DesafioEstagio\DesafioTargetSystem\DesafiioTargetSp\exercicio1\obj\Debug\net8.0\DesafiioTargetSp.csproj.CoreCompileInputs.cache
+E:\DesafioEstagio\DesafioTargetSystem\DesafiioTargetSp\exercicio1\obj\Debug\net8.0\DesafiioTargetSp.dll
+E:\DesafioEstagio\DesafioTargetSystem\DesafiioTargetSp\exercicio1\obj\Debug\net8.0\refint\DesafiioTargetSp.dll
+E:\DesafioEstagio\DesafioTargetSystem\DesafiioTargetSp\exercicio1\obj\Debug\net8.0\DesafiioTargetSp.pdb
+E:\DesafioEstagio\DesafioTargetSystem\DesafiioTargetSp\exercicio1\obj\Debug\net8.0\DesafiioTargetSp.genruntimeconfig.cache
+E:\DesafioEstagio\DesafioTargetSystem\DesafiioTargetSp\exercicio1\obj\Debug\net8.0\ref\DesafiioTargetSp.dll
